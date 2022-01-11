@@ -1,8 +1,7 @@
 var addBinary = function(a, b) {
-    var result = "";
-    var i = a.length - 1;
-    var j = b.length - 1;
-    var carry = 0;
+    let result = "";
+    let i = a.length - 1, j = b.length - 1;
+    let carry = 0;
     while (i >= 0 || j >= 0 || carry > 0) {
         carry += i >= 0 ? parseInt(a[i--]) : 0;
         carry += j >= 0 ? parseInt(b[j--]) : 0;
