@@ -23,6 +23,8 @@ const maxSubarraySumCircular = function(nums) {
     // max sum of circular subarray === total sum of subarray - minimum sum of subarray
     const circularMax = total + minSubArraySum;
 
+    // circularMax === 0 means that nums only contains negative (or zero)
+    // then, return nonCircularMax
     if (circularMax === 0) {
         return nonCircularMax;
     }
